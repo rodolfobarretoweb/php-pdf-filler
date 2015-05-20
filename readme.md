@@ -6,7 +6,7 @@ PHP PDF FILLER is a simple library to import pdf files and write the content ins
 
 ### Credits
  * This library was based on: http://www.pentco.com/test/
- * Very aided by: <juliobetta@gmail.com>
+ * With the help by: <juliobetta@gmail.com>
 
 -------------------------------------------------------------------------------
 
