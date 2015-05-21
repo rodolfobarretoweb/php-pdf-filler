@@ -26,9 +26,4 @@ PHP PDF FILLER is a simple library to import pdf files and write the content ins
 
 ### EXAMPLE
     $pdf = new PhpPdfFiller('path/to/pdftk');
-    $pdf->writeFile(array(
-      'file'      => 'form.pdf',
-      'info'      => array('name', 'value')
-      'dir_file'  => 'where/you/save/file',
-      'file_name' => 'name_of_your_file' // no extension please
-    ));
+    $pdf->writeFile('new_file_name", "base_file", array('name' => 'value'));
