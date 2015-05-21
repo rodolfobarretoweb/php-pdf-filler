@@ -47,6 +47,9 @@ final Class PhpPdfFiller {
 
       header('Content-type: application/pdf');
       echo file_get_contents("{$new_file}.pdf");
+
+      unlink("{$new_file}.pdf");
+      unlink("{$new_file}.fdf");
     }
 
     fclose($file);
