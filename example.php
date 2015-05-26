@@ -5,6 +5,6 @@ ini_set('display_errors', 1);
 require_once("PhpPdfFiller.php");
 
 $pdf = new PhpPdfFiller('file_example.pdf');
-$pdf->writeFile(array('name' => 'Name 4'));
-$pdf->writeFile(array('name' => 'Name 5'));
-$pdf->showFile();
+$pdf->create(array('name' => 'Name 4'));
+$pdf->create(array('name' => 'Name 5'));
+$pdf->display();

@@ -37,7 +37,7 @@ final Class PhpPdfFiller {
   }
 
   # Get pdf base, create fdf file and merge the content
-  public function writeFile($data) {
+  public function create($data) {
     $new_pdf_name = mt_rand();
 
     # create fdf file
@@ -60,7 +60,7 @@ final Class PhpPdfFiller {
   }
 
   # Show the pdf
-  public function showFile() {
+  public function display() {
     $final_pdf_name     = mt_rand() . ".pdf";
     $has_multiple_files = count($this->pdf_names) > 1;
 
