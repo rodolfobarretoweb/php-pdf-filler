@@ -25,5 +25,14 @@ PHP PDF FILLER is a simple library to import pdf files and write the content ins
 -------------------------------------------------------------------------------
 
 ### EXAMPLE
-    $pdf = new PhpPdfFiller('path/to/pdftk');
-    $pdf->writeFile('new_file_name", "base_file", array('name' => 'value'));
+    # By default the path of the PDFTK and TMP directory is: /usr/local/bin/pdftk | /tmp/
+    $pdf = new PhpPdfFiller('pdf_base.pdf', 'path/to/pdftk', 'path/to/tmp/');
+    
+    # Single file
+    $pdf->create(array('name' => 'value'));
+    $pdf->display();
+    
+    # Multiple files
+    $pdf->create(array('name' => 'value1'));
+    $pdf->create(array('name' => 'value2'));
+    $pdf->display();
