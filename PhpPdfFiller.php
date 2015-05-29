@@ -47,7 +47,7 @@ final Class PhpPdfFiller {
     if($tmp_file && fwrite($tmp_file, $fdf_file, strlen($fdf_file))) {
       $command  = "{$this->pdftk_path} A='{$this->pdf_base}' ";
       $command .= "fill_form '" . $this->base_directory . $new_pdf_name . ".fdf' ";
-      $command .= "output '" . $this->base_directory . $new_pdf_name . ".pdf' drop_xfa need_appearances";
+      $command .= "output '" . $this->base_directory . $new_pdf_name . ".pdf' drop_xfa";
 
       # Execute the command to merge pdf base with new fdf file
       passthru($command);
