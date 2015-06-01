@@ -3,7 +3,7 @@ final Class PhpPdfFiller {
   private $pdftk_path;
   private $base_directory;
   private $pdf_base;
-  private $pdf_names = array();
+  private $pdf_names = [];
 
   public function __construct($pdf_base, $pdftk_path = '/usr/local/bin/pdftk', $base_directory = '/tmp/'){
     $this->pdftk_path     = $pdftk_path;
